@@ -6,6 +6,8 @@ public class ItemSo : ScriptableObject
 {
     public Sprite sprite;
     public string itemName;
+    public int maxStackSize;
+
 
 
 
