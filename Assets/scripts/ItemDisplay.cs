@@ -28,6 +28,10 @@ public class ItemDisplay : MonoBehaviour
     }
     public void itemPress()
     {
-        Actions.OnitemSelected(this);
+        if(Actions.OnitemSelected!=null)
+        {
+            Actions.OnitemSelected(this);
+        }
+       
     }
 }
