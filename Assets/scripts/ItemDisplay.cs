@@ -12,15 +12,11 @@ public class ItemDisplay : MonoBehaviour
     public int itemCurrentCount;
 
 
-    public void Start()
-    {
-        UpdateItem(itemSo);
-    }
-
-    public void UpdateItem(ItemSo _itemSo)
+    public void UpdateItem(ItemSo _itemSo,int count)
     {
         itemSo = _itemSo;
         itemImage.sprite = itemSo.sprite;
+        itemCurrentCount=count;
         itemCountText.text = itemCurrentCount.ToString();
 
         
